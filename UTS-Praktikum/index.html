@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Sederhana</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1 class="logo">Portfolio</h1>
+    <ul class="nav-links">
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#prestasi">Prestasi</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="dark-toggle"><i class="fas fa-moon"></i></button>
+  </nav>
+
+  <section id="beranda" class="section">
+    <img src="prodile.png" alt="Foto Profil" class="profile-img" />
+    <h2>Raymond Marthin</h2>
+    <p>Perkenalkan, saya Raymond Marthin saya saat ini berkuliah semester 4 di Universitas Singaperangsa Karawang Prodi Sistem Informasi, saya memiliki nilai ips rata - rata baik, sebelumnya saya lulus Sekolah Menengah Kejuruan Multimedia di SMKN 55, Saya selalu mendapat peringkat 5 besar semasa sekolah. Nilai rata - rata saya 8.7 dan saya seorang yang disiplin, bertanggung jawab, dan saya dapat bekerja dengan baik. Saya bisa menggunakan Bahasa Inggris dengan baik, dan saya pernah mengikuti tes TOEIC sebanyak 3 kali.</p>
+  </section>
+
+  <section id="portfolio" class="section">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="card">
+        <img src="porto2.jpg" alt="Gambar 1" />
+        <p>Design Graphic</p>
+      </div>
+      <div class="card">
+        <img src="porto3.jpg" alt="Gambar 2" />
+        <p>Pixelated</p>
+      </div>
+      <div class="card">
+        <img src="porto4.jpg" alt="Gamabar 3" />
+        <p>Editing Video</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="prestasi" class="section">
+    <h2>Prestasi</h2>
+    <ul class="timeline">
+      <li><strong>2020:</strong> Juara 2 Lomba Bahasa Inggris Se Kecamatan  </li>
+      <li><strong>2022:</strong> Sertifikat Tes Toeic</li>
+    </ul>
+  </section>
+
+  <section id="cv" class="section">
+    <h2>Curriculum Vitae</h2>
+    <div class="cv-container">
+      <img src="cv.jpg" alt="CV Placeholder" style="max-width:100%; margin-top:1em; border:1px solid #ccc;" />
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="nama" placeholder="Nama" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <textarea id="pesan" placeholder="Pesan..." required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+    <button onclick="document.getElementById('beranda').scrollIntoView({behavior:'smooth'})">
+      Kembali ke Beranda
+    </button>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p><strong>Email:</strong> raymondmarthinaruan@gmail.com</p>
+      <p><strong>Telepon:</strong> +62 851 7229 3359</p>
+      <p><strong>Alamat:</strong> Jl. Telaga Murni E III, No.70,  Jakarta Utara</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
